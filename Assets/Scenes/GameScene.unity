@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.34070888, g: 0.2821429, b: 0.41927856, a: 1}
+  m_IndirectSpecularColor: {r: 0.3273415, g: 0.2819711, b: 0.41690004, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6204,7 +6204,7 @@ MonoBehaviour:
   ConnectPort: 7777
   ServerListenPort: 7777
   ServerWebsocketListenPort: 8887
-  SupportWebsocket: 0
+  SupportWebsocket: 1
   Channels: []
   UseMLAPIRelay: 0
   MLAPIRelayAddress: 184.72.104.138
