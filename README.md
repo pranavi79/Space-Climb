@@ -49,6 +49,8 @@ Platform : PC, MAC & Linux Standalone
 
 ![Screenshot (246)](https://user-images.githubusercontent.com/59930598/134810763-182c8e4c-0a90-4f94-8b90-1099d6d2f3fd.png)
 
+![Winner](https://user-images.githubusercontent.com/59930598/134810934-9f66bb99-8c8c-4261-91e5-5b969bbcffe6.jpg)
+
 # <a name="thnku"></a>Special Thanks
 * [Brackeys](https://github.com/Brackeys)
 * [Dapper Dino](https://github.com/DapperDino)
