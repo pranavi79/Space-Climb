@@ -14,7 +14,7 @@ public class GrapplingGun : NetworkBehaviour {
     public Transform player;
     public LayerMask whatIsGrappleable;
     
-    private float maxDistance = 100f;
+    [SerializeField] private float maxDistance;
 
     private LineRenderer lr;
     private ulong clientId;
@@ -42,7 +42,7 @@ public class GrapplingGun : NetworkBehaviour {
 
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        if(Physics.Raycast(ray, out hit))
+        if(Physics.Raycast(ray, out hit, maxDistance))
         {
             var selection= hit.transform;
             var selectionRenderer = selection.GetComponent<Renderer>();
