@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.32734096, g: 0.28197032, b: 0.41689733, a: 1}
+  m_IndirectSpecularColor: {r: 0.34070888, g: 0.2821429, b: 0.41927856, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4961,7 +4961,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter Room ID
+  m_Text: Enter IP Address
 --- !u!222 &366602320
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5985,7 +5985,7 @@ MonoBehaviour:
     MaxReceiveEventsPerTickRate: 500
     EventTickrate: 64
     ClientConnectionBufferTimeout: 10
-    ConnectionApproval: 0
+    ConnectionApproval: 1
     ConnectionData: 
     EnableTimeResync: 0
     TimeResyncInterval: 30
@@ -8013,9 +8013,9 @@ MonoBehaviour:
   menuPanel: {fileID: 122017077}
   crossHair: {fileID: 1334744880}
   nameField: {fileID: 218862510}
-  hostPassField: {fileID: 0}
-  roomIdField: {fileID: 0}
-  clientPassField: {fileID: 0}
+  hostPassField: {fileID: 185839124}
+  roomIdField: {fileID: 1611555246}
+  clientPassField: {fileID: 49389824}
 --- !u!114 &1645195431
 MonoBehaviour:
   m_ObjectHideFlags: 0
