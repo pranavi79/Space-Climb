@@ -119,6 +119,7 @@ public class PlayerMovement : NetworkBehaviour {
     }
 
     private void Movement() {
+        FindObjectOfType<AudioManager>().Play("footsteps");
         //Extra gravity
         rb.AddForce(Vector3.down * Time.deltaTime * 10);
         

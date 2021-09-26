@@ -77,6 +77,7 @@ public class GrapplingGun : NetworkBehaviour {
     /// Call whenever we want to start a grapple
     /// </summary>
     void StartGrapple() {
+        FindObjectOfType<AudioManager>().Play("grappling");
         RaycastHit hit;
         if (Physics.Raycast(camera.position, camera.forward, out hit, maxDistance, whatIsGrappleable)) {
             grapplePoint = hit.point;
