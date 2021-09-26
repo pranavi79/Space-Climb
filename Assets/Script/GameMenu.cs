@@ -25,7 +25,7 @@ public class GameMenu : NetworkBehaviour
 
     public void Start()
     {
-        FindObjectOfType<AudioManager>().Play("main");
+        //FindObjectOfType<AudioManager>().Play("main");
         crossHair.SetActive(false);
         lobbyCamera.enabled = true;
         menuPanel.SetActive(true);

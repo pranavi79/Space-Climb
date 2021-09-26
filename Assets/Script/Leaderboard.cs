@@ -15,7 +15,7 @@ public class Leaderboard : NetworkBehaviour
     [ClientRpc]
     void broadcastWinnerClientRpc(string winnerName)
     {
-        FindObjectOfType<AudioManager>().Play("main");
+        //FindObjectOfType<AudioManager>().Play("main");
         winnerPanel.SetActive(true);
         winnerCamera.enabled = true;
         crossHair.SetActive(false);

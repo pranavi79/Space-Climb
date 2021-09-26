@@ -167,6 +167,7 @@ public class PlayerMovement : NetworkBehaviour {
 
     private void Jump() {
         if (grounded && readyToJump) {
+            FindObjectOfType<AudioManager>().Play("jumping");
             readyToJump = false;
 
             //Add jump forces
