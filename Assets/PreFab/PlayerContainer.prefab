@@ -728,6 +728,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   ropeMaterial: {fileID: 2100000, guid: 7332bdaf1f2a0394ea703cbaf96db22e, type: 2}
+  highlightMaterial: {fileID: 2100000, guid: 04076a8ba5c805c409251912da22b641, type: 2}
+  defaultMaterial: {fileID: 2100000, guid: 5a26de236ce89e94b963be8fa2b7ade6, type: 2}
+  selectableTag: box
 --- !u!1 &6126355528493697118
 GameObject:
   m_ObjectHideFlags: 0

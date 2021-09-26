@@ -21,6 +21,11 @@ public class GrapplingGun : NetworkBehaviour {
     private bool isGrappling = false;
     private Hashtable lineRenderers = new Hashtable();
     public Material ropeMaterial;
+    public Material highlightMaterial;
+    public Material defaultMaterial;
+
+    public string selectableTag="box";
+    private Transform _currSelection;
 
     void Awake() {
         clientId = NetworkManager.Singleton.LocalClientId;
@@ -28,6 +33,29 @@ public class GrapplingGun : NetworkBehaviour {
     }
 
     void Update() {
+        if(_currSelection != null)
+        {
+            var selectionRenderer = _currSelection.GetComponent<Renderer>();
+            selectionRenderer.material = defaultMaterial;
+            _currSelection = null;
+        }
+
+        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if(Physics.Raycast(ray, out hit))
+        {
+            var selection= hit.transform;
+            var selectionRenderer = selection.GetComponent<Renderer>();
+            if(selection.CompareTag(selectableTag))
+            {
+                if (selectionRenderer != null)
+                {
+                    selectionRenderer.material = highlightMaterial;
+                }
+                _currSelection = selection;
+            }
+            
+        }
         if (Input.GetMouseButtonDown(0)) {
             StartGrapple();
         }
